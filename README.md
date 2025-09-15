@@ -14,9 +14,13 @@ Gerçek zamanlı veri işleme ile:
   ## 📂 Veri ve Tablo Oluşturma
 
  **ÖNEMLİ:** Bu proje için Spark ve Hadoop ortamınızın doğru şekilde kurulmuş ve yapılandırılmış olması gerekmektedir.
+
 -Kullanılan IoT sensör verileri `iot_telemetry_data.csv.zip` dosyasında bulunur.
+
 -Sanal makinenin terminalinde output dosyası oluşturulur ve bu dosyanın bulunduğu klasörün dizimine gelindikten sonra venvspark (source venvspark/bin/activate) aktif edildilir.
--python dataframe_to_log.py -i ~/datasets/iot_telemetry_data.csv -idx True(Bu komut, verileri output klasörüne yazıp streamin veri almasını sağlar.) komutuyla çalıştırılır.
+
+-python dataframe_to_log.py -i ~/datasets/iot_telemetry_data.csv -idx True (Bu komut, verileri output klasörüne yazıp streamin veri almasını sağlar.) komutuyla çalıştırılır.
+
 --Sink oluşturma:
 - Hive tablosu, DBeaver kullanılarak manuel oluşturulabilir.
 -   CREATE TABLE test1.sensor_51 (
